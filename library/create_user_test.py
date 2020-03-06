@@ -4,7 +4,7 @@
 from ansible.module_utils.basic import *
 
 def main():
-    fields = {"yourName": {"required": True, "type": "str"}} 
+    fields = {"var1": {"required": True, "type": "str"}, "var2": {"required": True, "type": "str"}} 
     module = AnsibleModule(argument_spec=fields)
     response = {"hello": "world"}
     print("TEST LECTURE SCRIPT")

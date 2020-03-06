@@ -3,6 +3,6 @@
   hosts: all
   tasks:
     - name: create user IBM
-      create_user_test: yourName=AAAAAA
+      create_user_test: var1=AAAAAA var2=BBBBBB
       register: result
     - debug: var=result
