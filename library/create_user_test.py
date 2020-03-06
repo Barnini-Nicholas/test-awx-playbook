@@ -1,0 +1,1 @@
+print("TEST LECTURE SCRIPT")
