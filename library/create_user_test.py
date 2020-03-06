@@ -5,7 +5,7 @@ from ansible.module_utils.basic import *
 
 def main():
 	module = AnsibleModule(argument_spec={
-        var1    = dict(required=True),
+        var1    = dict(required=True, type='str'),
         var2    = dict(required=True, type='str')
     })
 	response = {"hello": "world"}

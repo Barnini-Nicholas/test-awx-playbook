@@ -4,5 +4,5 @@
   tasks:
     - name: create user IBM
       create_user_test:
-        var1: value1
-        var2: value2
+        var1: 'value1'
+        var2: 'value2'
