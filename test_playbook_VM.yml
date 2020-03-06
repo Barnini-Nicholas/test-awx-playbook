@@ -2,7 +2,5 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-        msg: "haha"
+    - name: create user IBM
+      create_user_test:
