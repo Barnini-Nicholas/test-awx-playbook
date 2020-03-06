@@ -1,6 +1,6 @@
 ---
-- name: Hello World Sample
-  hosts: {{ var_dynamic_host }}
+- name: Playbook to test custom module through AWX
+  hosts: "{{ var_dynamic_host }}"
   tasks:
     - name: create user IBM
       create_user_test: var1=AAAAAA var2=BBBBBB
