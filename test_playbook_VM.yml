@@ -3,6 +3,6 @@
   hosts: "{{ var_dynamic_host }}"
   tasks:
     - name: create user IBM
-      create_user_test: var1=AAAAAA var2=BBBBBB
+      create_user_test: var1="{{ var1 }}" var2="{{ var2 }}"
       register: result
     - debug: var=result
