@@ -1,10 +1,8 @@
 ---
 - name: Playbook to test custom module through AWX
-  hosts: "{{ var_dynamic_host }}"
+  hosts: localhost
   tasks:
     - name: create user IBM
-      create_user_test: 
-        var1: "{{ var1 }}" 
-        var2: "{{ var2 }}"
+      create_user_test: var1="{{ var1 }}" var2="{{ var2 }}"
       register: result
     - debug: var=result
