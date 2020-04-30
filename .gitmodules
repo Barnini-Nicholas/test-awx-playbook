@@ -1,0 +1,3 @@
+[submodule "library/gitsubmodule-ansible-module-custom"]
+	path = library/gitsubmodule-ansible-module-custom
+	url = https://github.com/Barnini-Nicholas/gitsubmodule-ansible-module-custom.git
