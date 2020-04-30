@@ -6,3 +6,7 @@
       create_user_test: var1="{{ var1 }}" var2="{{ var2 }}"
       register: result
     - debug: var=result
+    - name: create user pouet
+      create_user_test: var1="{{ var1 }}" var2="{{ var2 }}"
+      register: result
+    - debug: var=result
